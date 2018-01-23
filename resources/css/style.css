@@ -1,5 +1,7 @@
 html{
+  background-color: azure;
   font-size: 18px;
+  line-height: 1.4;
   font-family: Helvetica;
   text-align: center;
   color: white;
@@ -17,13 +19,26 @@ html{
   height: 30rem;
   background-image: url("../images/glasses-bg.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+}
+
+.header_textbox{
+  display: inline-flex;
+  color: black;
+  margin-top: 10rem;
+  background-color: white;
+}
+
+.header_textbox p{
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
 }
 
 nav{
-  display: inline-flex;
-  width: 100%;
   margin-top: 1rem;
+  display: flex;
   background-color: cadetblue;
   justify-content: space-between;
 }
@@ -41,6 +56,29 @@ nav img{
   height: 1.5rem;
 }
 
-div{
-  border: solid 1px black;
+.main_flexbox{
+  display: flex;
+  height: 8rem;
+  color: black;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  justify-content: space-between;
+  align-items:stretch;
 }
+
+.main_flexbox_item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.main_flexbox_item img{
+  margin: auto;
+}
+
+
+
+/*div{
+  border: solid 1px black;
+}*/
