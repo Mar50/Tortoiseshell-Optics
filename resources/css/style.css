@@ -23,7 +23,9 @@ html{
 }
 
 .header_textbox{
-  display: inline-flex;
+  display: inline-block;
+  position: absolute;
+  margin-right: 2rem;
   color: black;
   margin-top: 10rem;
   background-color: white;
@@ -100,6 +102,17 @@ nav img{
   font-weight: bold;
 }
 
-/*div{
-  border: solid 1px black;
-}*/
+footer{
+  display: inline-flex;
+  color: black;
+  text-align: left;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+
+footer img{
+  height: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 4rem;
+}
