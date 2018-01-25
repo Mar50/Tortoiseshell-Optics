@@ -23,11 +23,12 @@ html{
 }
 
 .header_textbox{
-  display: inline-block;
-  position: absolute;
-  margin-right: 2rem;
+  display: flex;
+  position: relative;
+  left: 2rem;
   color: black;
   margin-top: 10rem;
+  margin-right: auto;
   background-color: white;
 }
 
@@ -39,8 +40,9 @@ html{
 }
 
 nav{
+  display: inline-flex;
+  justify-content: center;
   margin-top: 1rem;
-  display: flex;
   background-color: cadetblue;
   justify-content: space-between;
 }
@@ -115,4 +117,26 @@ footer img{
   height: 1.5rem;
   padding-right: 1rem;
   padding-left: 4rem;
+}
+
+@media only screen and (max-width:1024px){
+  nav{
+    width: 100%;
+  }
+  .header_textbox{
+    padding: 0.75rem 4rem;
+  }
+}
+
+@media only screen and (max-width:470px){
+  .header_background_box{
+    background-position: 20%;
+  }
+
+  .header_textbox{
+    margin-top: 9rem;
+    width: 100%;
+    margin: auto;
+  }
+
 }
